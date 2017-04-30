@@ -37,6 +37,7 @@ function getRelated(topic: string, done: (data: any) => void, error?: (err: Erro
 }
 
 /** Promises */
+// TODO Polyfill promises!
 function getArticleAsync(url: string): Promise<Article> {
     if (url.match('fail')) {
         return Promise.reject(new Error('Oops'))
