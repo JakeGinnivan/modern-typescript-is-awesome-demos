@@ -15,7 +15,8 @@ const renderExample = <TProps extends Map>(
     component: ReactComponent<TProps>,
     descriptions: Record<keyof TProps, string>
 ): string => {
-    const propertyDescriptions = Object.keys(descriptions)
+    const propertyDescriptions = Object
+        .keys(descriptions)
         .map(key => descriptions[key])
         .join('\r\n')
 
