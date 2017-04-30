@@ -1,0 +1,20 @@
+{
+    "version": "0.1.0",
+    "tasks": [
+        {
+            "taskName": "tsc",
+            "command": "tsc",
+            "args": ["-w"],
+            "isShellCommand": true,
+            "isBackground": true,
+            "problemMatcher": "$tsc-watch"
+        },
+        {
+            "taskName": "tsc",
+            "command": "node_modules/.bin/tsc",
+            "args": ["demos"],
+            "isShellCommand": true,
+            "isBuildCommand": true
+        }
+    ]
+}
