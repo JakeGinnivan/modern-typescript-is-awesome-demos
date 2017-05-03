@@ -53,7 +53,7 @@ export const order = (drinks: Array<Drink | OrderWithQty>) => {
         }
     }, { total: 0, orderSummary: ''})
 
-    return `Order Ticket
+    return `Order
 ${orderDetails.orderSummary}
 
 total: ${orderDetails.total}`
